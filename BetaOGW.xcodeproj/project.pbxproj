@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		576CC0EE276A7F4F00A9E819 /* PhoneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0ED276A7F4F00A9E819 /* PhoneDetailView.swift */; };
+		576CC0F0276A7F6D00A9E819 /* ToneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0EF276A7F6D00A9E819 /* ToneView.swift */; };
+		576CC0F2276A7F7B00A9E819 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0F1276A7F7B00A9E819 /* VolumeView.swift */; };
+		576CC0F4276A7F9D00A9E819 /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0F3276A7F9D00A9E819 /* UpdateView.swift */; };
+		576CC0F6276A7FB800A9E819 /* PasswordSsetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0F5276A7FB800A9E819 /* PasswordSsetupView.swift */; };
+		576CC0F8276A7FCE00A9E819 /* PowerUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0F7276A7FCE00A9E819 /* PowerUseView.swift */; };
 		57F326B3276009120001A3D5 /* BetaOGWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F326B2276009120001A3D5 /* BetaOGWApp.swift */; };
 		57F326B5276009120001A3D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F326B4276009120001A3D5 /* ContentView.swift */; };
 		57F326B7276009160001A3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F326B6276009160001A3D5 /* Assets.xcassets */; };
 		57F326BA276009160001A3D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F326B9276009160001A3D5 /* Preview Assets.xcassets */; };
+		57F326C5276947FB0001A3D5 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F326C4276947FB0001A3D5 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		576CC0ED276A7F4F00A9E819 /* PhoneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailView.swift; sourceTree = "<group>"; };
+		576CC0EF276A7F6D00A9E819 /* ToneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneView.swift; sourceTree = "<group>"; };
+		576CC0F1276A7F7B00A9E819 /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
+		576CC0F3276A7F9D00A9E819 /* UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateView.swift; sourceTree = "<group>"; };
+		576CC0F5276A7FB800A9E819 /* PasswordSsetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSsetupView.swift; sourceTree = "<group>"; };
+		576CC0F7276A7FCE00A9E819 /* PowerUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUseView.swift; sourceTree = "<group>"; };
 		57F326AF276009120001A3D5 /* BetaOGW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaOGW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F326B2276009120001A3D5 /* BetaOGWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaOGWApp.swift; sourceTree = "<group>"; };
 		57F326B4276009120001A3D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57F326B6276009160001A3D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57F326B9276009160001A3D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57F326C4276947FB0001A3D5 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		576CC0F9276A7FD600A9E819 /* Settings I */ = {
+			isa = PBXGroup;
+			children = (
+				576CC0F3276A7F9D00A9E819 /* UpdateView.swift */,
+				576CC0ED276A7F4F00A9E819 /* PhoneDetailView.swift */,
+				576CC0F7276A7FCE00A9E819 /* PowerUseView.swift */,
+				576CC0F5276A7FB800A9E819 /* PasswordSsetupView.swift */,
+				576CC0F1276A7F7B00A9E819 /* VolumeView.swift */,
+				576CC0EF276A7F6D00A9E819 /* ToneView.swift */,
+			);
+			path = "Settings I";
+			sourceTree = "<group>";
+		};
 		57F326A6276009120001A3D5 = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				57F326B2276009120001A3D5 /* BetaOGWApp.swift */,
+				57F326C4276947FB0001A3D5 /* InfoView.swift */,
+				576CC0F9276A7FD600A9E819 /* Settings I */,
 				57F326B4276009120001A3D5 /* ContentView.swift */,
 				57F326B6276009160001A3D5 /* Assets.xcassets */,
 				57F326B8276009160001A3D5 /* Preview Content */,
@@ -137,7 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576CC0EE276A7F4F00A9E819 /* PhoneDetailView.swift in Sources */,
 				57F326B5276009120001A3D5 /* ContentView.swift in Sources */,
+				57F326C5276947FB0001A3D5 /* InfoView.swift in Sources */,
+				576CC0F0276A7F6D00A9E819 /* ToneView.swift in Sources */,
+				576CC0F2276A7F7B00A9E819 /* VolumeView.swift in Sources */,
+				576CC0F8276A7FCE00A9E819 /* PowerUseView.swift in Sources */,
+				576CC0F6276A7FB800A9E819 /* PasswordSsetupView.swift in Sources */,
+				576CC0F4276A7F9D00A9E819 /* UpdateView.swift in Sources */,
 				57F326B3276009120001A3D5 /* BetaOGWApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
