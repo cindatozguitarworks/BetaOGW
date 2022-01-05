@@ -11,11 +11,11 @@ struct InfoView: View {
    
     var body: some View {
        VStack{
-          Text("Info on Guitar Screen")
+          Text("Info on Guitar Screen - Upper Right Circle")
          Spacer()
       } .padding()
         .navigationBarTitle("Info")
-      }
+    }
   }
 
 struct InfoView_Previews: PreviewProvider {

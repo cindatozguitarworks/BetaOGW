@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-   @State var ownerName: String = "Oz Anderson"
-   @State var ownerReg: String = "123456789"
-   @State var scaleLen: String = "1.234"
    
-   @State var partNum: String = "123456"
-   @State var serialNum: String = "12aBc3456D"
+   @ObservedObject var tau6  = Tau6()
    
-   @State var passwordOn: Bool = false
-   @State var userDetailIndex = 0
+  
+   @State var unitChoice = ["English","Metric"]
+   
+   @State var passwordOn = true
+ //  @State Observable Object var passwordChoice = ["Yes","No"]
+   
+
    @State var userDetailLevel = ["Normal","HardCore"]
    
    
@@ -25,24 +26,48 @@ struct ContentView: View {
     var body: some View {
       NavigationView {
          Form{
+            
+//MARK: - 1st Section
             Section(header: Text("General Guitar")) {
-              Text(" Owner \(ownerName)")
-              Text(" Owner Registration #  \(ownerReg)")
-              Text(" Scale Length =  \(scaleLen)")
-              Text(" Part # =  \(partNum)")
-              Text(" Serial # = \(serialNum)")
+               Text(" Owner \(tau6.ownerName)")
+               Text(" Owner Registration #  \(tau6.ownerReg)")
+               Text(" Scale Length =  \(tau6.scaleLen)")
+               Text(" Part # =  \(tau6.partNum)")
+               Text(" Serial # = \(tau6.serialNum)")
+               Text(" Tau6 app Software Ver# =  \(tau6.tauSoftAppVer)")
                
+             NavigationLink(destination: UpdateView(), label: { Text( " Tau6 Firmware Ver# =     \(tau6.firmwareVersion)")
+
+               })
                
-              Toggle(isOn: $passwordOn){
-                  Text ("Password On")
+               NavigationLink(destination: PhoneDetailView(), label: { Text( " Misc Phone Details = ")
                }
+               )
+
+               Picker("English or Metric", selection: $tau6.units) {
+                     ForEach(0 ..< unitChoice.count){
+                       Text(self.unitChoice[$0])
+                     }
+            }.pickerStyle(SegmentedPickerStyle())
+  
             }//section1
+            
+//MARK: - SECOND SECTION
+            
                Section(header: Text("User General")) {
-                  Picker(selection: $userDetailIndex, label: Text("User Detail Level" )){
-                  ForEach(0 ..< userDetailLevel.count){
-                     Text(self.userDetailLevel[$0])
-                  }
-               }
+                  
+                  Picker("User Detail Level", selection: $tau6.userDetailIndex) {
+                      ForEach(0 ..< userDetailLevel.count){
+                       Text(self.userDetailLevel[$0])
+                    }
+               }.pickerStyle(SegmentedPickerStyle())
+           
+           NavigationLink(destination: PasswordSetupView(), label: { Text( "Password Use    ")
+                  } )
+
+                    
+                    
+                  
          }//section 2
          }//form
          .navigationBarTitle("Settings I", displayMode: .automatic)
