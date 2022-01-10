@@ -24,7 +24,9 @@ struct UpdateView: View {
          
          HStack{
          Spacer()
-            Button(action: { })
+            Button(action: { print(tau6.model)
+                print(UIDevice.current.modelName)
+            })
             {
             Text(" Update ")
             }.border(.black )
@@ -40,6 +42,7 @@ struct UpdateView: View {
           .resizable()
           .aspectRatio( contentMode: .fit)
       } //section1
+          
           //MARK: - 2nd Section
              Section(header: Text("Log")) {
                 Text("1/3/2022 update successful")

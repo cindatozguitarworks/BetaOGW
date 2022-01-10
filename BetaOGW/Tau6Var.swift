@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 class Tau6: NSObject, ObservableObject {
 //MARK: -- Settings I --
 //MARK: - General Guitar - Section 1
@@ -29,14 +30,16 @@ class Tau6: NSObject, ObservableObject {
   
    //MARK: - Phone Detail - Section 1
    
-   @Published var androidOSVer: String = "7.1.2"
-   @Published var osAPILev : String = "25"
-   @Published var linuxKernelVer : String = "3.18.31-gc22ff621f1a"
-   @Published var deviceName: String = "Unknown Device"
-   @Published var bluetoothName: String = "Pixel"
+   @Published var androidOSVer: String = ""
+   @Published var osAPILev : String = ""
+   @Published var linuxKernelVer : String = ""
+   @Published var deviceName: String = UIDevice.current.name
+   @Published var systemName: String =  UIDevice.current.systemName
+   @Published var version: String =  UIDevice.current.systemVersion
    @Published var brand: String = "google"
-   @Published var manufacture : String = "Google"
-   @Published var model: String = "Pixel"
+//   @Published var manufacture : String = "Google"
+   @Published var bluetoothName: String = "Pixel"
+   @Published var model: String =  UIDevice.current.modelName //"Pixel"
    @Published var product: String = "sailfish"
    @Published var board: String = "sailfish"
    
@@ -47,6 +50,28 @@ class Tau6: NSObject, ObservableObject {
    @Published var multipleAds : Bool =  true
    
    //MARK: - Password User Setup
-   @State var passwordOn : Bool =  true
+   @Published var passwordOn : Bool =  true
    @Published var password: String = ""
+   @Published var passwordDays: String = "7"
+   @Published var resetCountOn : Bool =  true
+   
+   //MARK: - Power Use Setup - Section 1
+   @Published var positiveCurrentVoltage: String = "8.2V"
+   @Published var positivePercentAvailable: String = " 60%"
+   //MARK: - Power Use Setup - Section 2
+   @Published var negativeCurrentVoltage: String = "-8.0V"
+   @Published var negativePercentAvailable: String = " 50%"
+   //MARK: - Power Use Setup - Section 3
+   @Published var appNotificationOn : Bool =  true
+   @Published var textAlerts: String = " none "
+   @Published var loPowerAlerts: String = " none "
+   @Published var loPowerWarning: String = " none "
+   //MARK: - Power Use Setup - Section 4
+   @Published var sleepNoMotion: String = " none "
+   @Published var sleepNoPlay: String = " none "
+   @Published var blankGearShift: String = " none "
+   @Published var blankVolChange:  Bool = false
+   
+   
 }
+

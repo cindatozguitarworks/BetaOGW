@@ -31,30 +31,34 @@ struct PhoneDetailView: View {
          Spacer()
          Text("\(tau6.linuxKernelVer)")
          }
+         
          HStack{
             Text("Device Name")
             Spacer()
             Text("\(tau6.deviceName)")
          }
          HStack{
+            Text("Model")
+            Spacer()
+            Text("\(tau6.model)")
+         }
+         
+         HStack{
+         Text("System Name")
+         Spacer()
+         Text("\(tau6.systemName)")
+         }
+         HStack{
+         Text("Version")
+         Spacer()
+         Text("\(tau6.version)")
+         }
+         
+        
+         HStack{
          Text("Bluetooth Name")
          Spacer()
          Text("\(tau6.bluetoothName)")
-         }
-         HStack{
-         Text("Brand")
-         Spacer()
-         Text("\(tau6.brand)")
-         }
-         HStack{
-            Text("Manufacturer")
-            Spacer()
-            Text("\(tau6.manufacture)")
-         }
-         HStack{
-         Text("Model")
-         Spacer()
-         Text("\(tau6.model)")
          }
          HStack{
          Text("Product")

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57004DC0278CC07D00A8E72C /* PhoneInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57004DBF278CC07D00A8E72C /* PhoneInfo.swift */; };
+		574008C92788B0C90068CB3D /* currModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574008C82788B0C90068CB3D /* currModuleView.swift */; };
+		574008CB2788B0E00068CB3D /* currThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574008CA2788B0E00068CB3D /* currThemeView.swift */; };
+		574008CD2788B0F60068CB3D /* currPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574008CC2788B0F60068CB3D /* currPresetView.swift */; };
+		574008D327890CD50068CB3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574008D227890CD50068CB3D /* Assets.xcassets */; };
 		576CC0EE276A7F4F00A9E819 /* PhoneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0ED276A7F4F00A9E819 /* PhoneDetailView.swift */; };
 		576CC0F0276A7F6D00A9E819 /* ToneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0EF276A7F6D00A9E819 /* ToneView.swift */; };
 		576CC0F2276A7F7B00A9E819 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0F1276A7F7B00A9E819 /* VolumeView.swift */; };
@@ -17,11 +22,16 @@
 		57A62FBC2784D661001342BD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A62FBB2784D661001342BD /* InfoView.swift */; };
 		57F326B3276009120001A3D5 /* BetaOGWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F326B2276009120001A3D5 /* BetaOGWApp.swift */; };
 		57F326B5276009120001A3D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F326B4276009120001A3D5 /* ContentView.swift */; };
-		57F326B7276009160001A3D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F326B6276009160001A3D5 /* Assets.xcassets */; };
 		57F326BA276009160001A3D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F326B9276009160001A3D5 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57004DBF278CC07D00A8E72C /* PhoneInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInfo.swift; sourceTree = "<group>"; };
+		574008C82788B0C90068CB3D /* currModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currModuleView.swift; sourceTree = "<group>"; };
+		574008CA2788B0E00068CB3D /* currThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currThemeView.swift; sourceTree = "<group>"; };
+		574008CC2788B0F60068CB3D /* currPresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currPresetView.swift; sourceTree = "<group>"; };
+		574008D227890CD50068CB3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		574008D627890CFF0068CB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		576CC0ED276A7F4F00A9E819 /* PhoneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailView.swift; sourceTree = "<group>"; };
 		576CC0EF276A7F6D00A9E819 /* ToneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneView.swift; sourceTree = "<group>"; };
 		576CC0F1276A7F7B00A9E819 /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
@@ -33,7 +43,6 @@
 		57F326AF276009120001A3D5 /* BetaOGW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaOGW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57F326B2276009120001A3D5 /* BetaOGWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaOGWApp.swift; sourceTree = "<group>"; };
 		57F326B4276009120001A3D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		57F326B6276009160001A3D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57F326B9276009160001A3D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,6 +66,9 @@
 				576CC0F7276A7FCE00A9E819 /* PowerUseView.swift */,
 				576CC0F1276A7F7B00A9E819 /* VolumeView.swift */,
 				576CC0EF276A7F6D00A9E819 /* ToneView.swift */,
+				574008C82788B0C90068CB3D /* currModuleView.swift */,
+				574008CA2788B0E00068CB3D /* currThemeView.swift */,
+				574008CC2788B0F60068CB3D /* currPresetView.swift */,
 			);
 			path = "Settings I";
 			sourceTree = "<group>";
@@ -80,12 +92,14 @@
 		57F326B1276009120001A3D5 /* BetaOGW */ = {
 			isa = PBXGroup;
 			children = (
+				574008D627890CFF0068CB3D /* Info.plist */,
+				57004DBF278CC07D00A8E72C /* PhoneInfo.swift */,
 				57A62FBB2784D661001342BD /* InfoView.swift */,
 				57F326B2276009120001A3D5 /* BetaOGWApp.swift */,
 				57A62FB92783CCEA001342BD /* Tau6Var.swift */,
 				576CC0F9276A7FD600A9E819 /* Settings I */,
 				57F326B4276009120001A3D5 /* ContentView.swift */,
-				57F326B6276009160001A3D5 /* Assets.xcassets */,
+				574008D227890CD50068CB3D /* Assets.xcassets */,
 				57F326B8276009160001A3D5 /* Preview Content */,
 			);
 			path = BetaOGW;
@@ -157,8 +171,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				574008D327890CD50068CB3D /* Assets.xcassets in Resources */,
 				57F326BA276009160001A3D5 /* Preview Assets.xcassets in Resources */,
-				57F326B7276009160001A3D5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,12 +187,16 @@
 				57F326B5276009120001A3D5 /* ContentView.swift in Sources */,
 				57A62FBA2783CCEA001342BD /* Tau6Var.swift in Sources */,
 				576CC0F0276A7F6D00A9E819 /* ToneView.swift in Sources */,
+				574008CB2788B0E00068CB3D /* currThemeView.swift in Sources */,
 				576CC0F2276A7F7B00A9E819 /* VolumeView.swift in Sources */,
 				576CC0F8276A7FCE00A9E819 /* PowerUseView.swift in Sources */,
 				576CC0F6276A7FB800A9E819 /* PasswordSetupView.swift in Sources */,
+				57004DC0278CC07D00A8E72C /* PhoneInfo.swift in Sources */,
+				574008CD2788B0F60068CB3D /* currPresetView.swift in Sources */,
 				576CC0F4276A7F9D00A9E819 /* UpdateView.swift in Sources */,
 				57A62FBC2784D661001342BD /* InfoView.swift in Sources */,
 				57F326B3276009120001A3D5 /* BetaOGWApp.swift in Sources */,
+				574008C92788B0C90068CB3D /* currModuleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,12 +324,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BetaOGW/Preview Content\"";
 				DEVELOPMENT_TEAM = 9NGWNQGS6L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BetaOGW/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tau6;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,7 +344,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ozGuitarWorks.myapp.BetaOGW;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BetaOGW;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -335,12 +356,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BetaOGW/Preview Content\"";
 				DEVELOPMENT_TEAM = 9NGWNQGS6L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BetaOGW/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tau6;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -352,7 +376,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ozGuitarWorks.myapp.BetaOGW;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BetaOGW;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

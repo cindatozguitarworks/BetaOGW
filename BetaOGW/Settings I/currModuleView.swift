@@ -1,27 +1,27 @@
 //
-//  ToneView.swift
+//  currModuleView.swift
 //  BetaOGW
 //
-//  Created by Cynthia Anderson on 12/15/21.
+//  Created by Cynthia Anderson on 1/7/22.
 //
 
 import SwiftUI
 
-struct ToneView: View {
+struct currModuleView: View {
    @ObservedObject var tau6  = Tau6()
        
    var body: some View {
        Form{
         }//form
-       .navigationBarTitle("Tone Control")
+       .navigationBarTitle("Module Page")
     
    }//body
 }//view
 
-struct ToneView_Previews: PreviewProvider {
+struct currModuleView_Previews: PreviewProvider {
     static var previews: some View {
        NavigationView {
-        ToneView()
+        currModuleView()
        }
     }
 }

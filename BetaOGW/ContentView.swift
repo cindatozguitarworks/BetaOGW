@@ -49,7 +49,7 @@ struct ContentView: View {
                        Text(self.unitChoice[$0])
                      }
             }.pickerStyle(SegmentedPickerStyle())
-  
+               
             }//section1
             
 //MARK: - SECOND SECTION
@@ -65,10 +65,27 @@ struct ContentView: View {
            NavigationLink(destination: PasswordSetupView(), label: { Text( "Password Use    ")
                   } )
 
-                    
-                    
+         NavigationLink(destination: PowerUseView(), label: { Text( "Power Use    \(tau6.positiveCurrentVoltage) , \(tau6.negativeCurrentVoltage) ")
+                         } )
+                  
+         NavigationLink(destination: VolumeView(), label: { Text( " Volume Control")
+         })
+                  
+        NavigationLink(destination: ToneView(), label: { Text( " Tone Control")
+         })
                   
          }//section 2
+            //MARK: - THIRD SECTION
+                        
+         Section(header: Text("Pickup Info")) {
+            NavigationLink(destination: currModuleView(), label: { Text( "Current Module = ")
+            })
+                     
+           NavigationLink(destination: currThemeView(), label: { Text( "Current Theme = ")
+            })
+            NavigationLink(destination: currPresetView(), label: { Text( "Current Preset = ")
+             })
+         }//section 3
          }//form
          .navigationBarTitle("Settings I", displayMode: .automatic)
          
