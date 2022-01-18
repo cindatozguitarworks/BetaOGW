@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct BetaOGWApp: App {
+   @ObservedObject var tau6  = Tau6()
+   
     var body: some Scene {
+       
         WindowGroup {
-            ContentView()
-        }
-    }
-}
+           MainView()
+        }//windowgroup
+    }//scene
+}//app
+
+

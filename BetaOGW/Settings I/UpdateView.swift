@@ -29,10 +29,13 @@ struct UpdateView: View {
             })
             {
             Text(" Update ")
-            }.border(.black )
-            .foregroundColor(Color.white)
-            .background(.blue)
-            
+            }.font(.headline)
+            .foregroundColor(.white)
+            .padding()
+            .padding(.horizontal)
+            .background(Color.blue)
+            .cornerRadius(10)
+            .shadow(color: Color.blue.opacity(0.3), radius: 10, x: 0, y: 10)
             
             
             Spacer()
@@ -45,9 +48,11 @@ struct UpdateView: View {
           
           //MARK: - 2nd Section
              Section(header: Text("Log")) {
+                List{
                 Text("1/3/2022 update successful")
                 Text("11/4/2021 update successful")
                 Text("add a list here - Keep how many")
+                }//LIST
              }//section 2
           
       .navigationBarTitle("Firmware Rev")

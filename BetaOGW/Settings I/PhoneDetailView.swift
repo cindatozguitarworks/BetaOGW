@@ -16,21 +16,21 @@ struct PhoneDetailView: View {
    Form{
    //MARK: - 1st Section - CLEAN UP
       Section(header: Text("Device Information")) {
-         HStack{
-            Text("Android OS Version")
-            Spacer()
-            Text("\(tau6.androidOSVer)")
-         }
-         HStack{
-         Text("OS API Level")
-         Spacer()
-         Text("\(tau6.osAPILev)")
-         }
-         HStack{
-         Text("Linux Kernel Version")
-         Spacer()
-         Text("\(tau6.linuxKernelVer)")
-         }
+//         HStack{
+//            Text("Android OS Version")
+//            Spacer()
+//            Text("\(tau6.androidOSVer)")
+//         }
+//         HStack{
+//         Text("OS API Level")
+//         Spacer()
+//         Text("\(tau6.osAPILev)")
+//         }
+//         HStack{
+//         Text("Linux Kernel Version")
+//         Spacer()
+//         Text("\(tau6.linuxKernelVer)")
+//         }
          
          HStack{
             Text("Device Name")
