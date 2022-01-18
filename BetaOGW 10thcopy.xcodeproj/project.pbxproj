@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57004DC0278CC07D00A8E72C /* PhoneInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57004DBF278CC07D00A8E72C /* PhoneInfo.swift */; };
+		574008C92788B0C90068CB3D /* currModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574008C82788B0C90068CB3D /* currModuleView.swift */; };
+		574008CB2788B0E00068CB3D /* currThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574008CA2788B0E00068CB3D /* currThemeView.swift */; };
+		574008CD2788B0F60068CB3D /* currPresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574008CC2788B0F60068CB3D /* currPresetView.swift */; };
+		574008D327890CD50068CB3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 574008D227890CD50068CB3D /* Assets.xcassets */; };
+		576CC0EE276A7F4F00A9E819 /* PhoneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0ED276A7F4F00A9E819 /* PhoneDetailView.swift */; };
+		576CC0F0276A7F6D00A9E819 /* ToneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0EF276A7F6D00A9E819 /* ToneView.swift */; };
+		576CC0F2276A7F7B00A9E819 /* VolumeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0F1276A7F7B00A9E819 /* VolumeView.swift */; };
+		576CC0F4276A7F9D00A9E819 /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0F3276A7F9D00A9E819 /* UpdateView.swift */; };
+		576CC0F6276A7FB800A9E819 /* PasswordSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0F5276A7FB800A9E819 /* PasswordSetupView.swift */; };
+		576CC0F8276A7FCE00A9E819 /* PowerUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576CC0F7276A7FCE00A9E819 /* PowerUseView.swift */; };
+		57A62FBA2783CCEA001342BD /* Tau6Var.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A62FB92783CCEA001342BD /* Tau6Var.swift */; };
+		57A62FBC2784D661001342BD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A62FBB2784D661001342BD /* InfoView.swift */; };
+		57F326B3276009120001A3D5 /* BetaOGWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F326B2276009120001A3D5 /* BetaOGWApp.swift */; };
+		57F326B5276009120001A3D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F326B4276009120001A3D5 /* ContentView.swift */; };
+		57F326BA276009160001A3D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57F326B9276009160001A3D5 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		57004DBF278CC07D00A8E72C /* PhoneInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInfo.swift; sourceTree = "<group>"; };
+		574008C82788B0C90068CB3D /* currModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currModuleView.swift; sourceTree = "<group>"; };
+		574008CA2788B0E00068CB3D /* currThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currThemeView.swift; sourceTree = "<group>"; };
+		574008CC2788B0F60068CB3D /* currPresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currPresetView.swift; sourceTree = "<group>"; };
+		574008D227890CD50068CB3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		574008D627890CFF0068CB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		576CC0ED276A7F4F00A9E819 /* PhoneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetailView.swift; sourceTree = "<group>"; };
+		576CC0EF276A7F6D00A9E819 /* ToneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneView.swift; sourceTree = "<group>"; };
+		576CC0F1276A7F7B00A9E819 /* VolumeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeView.swift; sourceTree = "<group>"; };
+		576CC0F3276A7F9D00A9E819 /* UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateView.swift; sourceTree = "<group>"; };
+		576CC0F5276A7FB800A9E819 /* PasswordSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordSetupView.swift; sourceTree = "<group>"; };
+		576CC0F7276A7FCE00A9E819 /* PowerUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerUseView.swift; sourceTree = "<group>"; };
+		57A62FB92783CCEA001342BD /* Tau6Var.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tau6Var.swift; sourceTree = "<group>"; };
+		57A62FBB2784D661001342BD /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		57F326AF276009120001A3D5 /* BetaOGW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaOGW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F326B2276009120001A3D5 /* BetaOGWApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetaOGWApp.swift; sourceTree = "<group>"; };
+		57F326B4276009120001A3D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		57F326B9276009160001A3D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57F326AC276009120001A3D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		576CC0F9276A7FD600A9E819 /* Settings I */ = {
+			isa = PBXGroup;
+			children = (
+				576CC0F3276A7F9D00A9E819 /* UpdateView.swift */,
+				576CC0ED276A7F4F00A9E819 /* PhoneDetailView.swift */,
+				576CC0F5276A7FB800A9E819 /* PasswordSetupView.swift */,
+				576CC0F7276A7FCE00A9E819 /* PowerUseView.swift */,
+				576CC0F1276A7F7B00A9E819 /* VolumeView.swift */,
+				576CC0EF276A7F6D00A9E819 /* ToneView.swift */,
+				574008C82788B0C90068CB3D /* currModuleView.swift */,
+				574008CA2788B0E00068CB3D /* currThemeView.swift */,
+				574008CC2788B0F60068CB3D /* currPresetView.swift */,
+			);
+			path = "Settings I";
+			sourceTree = "<group>";
+		};
+		57F326A6276009120001A3D5 = {
+			isa = PBXGroup;
+			children = (
+				57F326B1276009120001A3D5 /* BetaOGW */,
+				57F326B0276009120001A3D5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57F326B0276009120001A3D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57F326AF276009120001A3D5 /* BetaOGW.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57F326B1276009120001A3D5 /* BetaOGW */ = {
+			isa = PBXGroup;
+			children = (
+				574008D627890CFF0068CB3D /* Info.plist */,
+				57004DBF278CC07D00A8E72C /* PhoneInfo.swift */,
+				57A62FBB2784D661001342BD /* InfoView.swift */,
+				57F326B2276009120001A3D5 /* BetaOGWApp.swift */,
+				57A62FB92783CCEA001342BD /* Tau6Var.swift */,
+				576CC0F9276A7FD600A9E819 /* Settings I */,
+				57F326B4276009120001A3D5 /* ContentView.swift */,
+				574008D227890CD50068CB3D /* Assets.xcassets */,
+				57F326B8276009160001A3D5 /* Preview Content */,
+			);
+			path = BetaOGW;
+			sourceTree = "<group>";
+		};
+		57F326B8276009160001A3D5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				57F326B9276009160001A3D5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57F326AE276009120001A3D5 /* BetaOGW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57F326BD276009160001A3D5 /* Build configuration list for PBXNativeTarget "BetaOGW" */;
+			buildPhases = (
+				57F326AB276009120001A3D5 /* Sources */,
+				57F326AC276009120001A3D5 /* Frameworks */,
+				57F326AD276009120001A3D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BetaOGW;
+			productName = BetaOGW;
+			productReference = 57F326AF276009120001A3D5 /* BetaOGW.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57F326A7276009120001A3D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					57F326AE276009120001A3D5 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 57F326AA276009120001A3D5 /* Build configuration list for PBXProject "BetaOGW" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57F326A6276009120001A3D5;
+			productRefGroup = 57F326B0276009120001A3D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57F326AE276009120001A3D5 /* BetaOGW */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57F326AD276009120001A3D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				574008D327890CD50068CB3D /* Assets.xcassets in Resources */,
+				57F326BA276009160001A3D5 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57F326AB276009120001A3D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576CC0EE276A7F4F00A9E819 /* PhoneDetailView.swift in Sources */,
+				57F326B5276009120001A3D5 /* ContentView.swift in Sources */,
+				57A62FBA2783CCEA001342BD /* Tau6Var.swift in Sources */,
+				576CC0F0276A7F6D00A9E819 /* ToneView.swift in Sources */,
+				574008CB2788B0E00068CB3D /* currThemeView.swift in Sources */,
+				576CC0F2276A7F7B00A9E819 /* VolumeView.swift in Sources */,
+				576CC0F8276A7FCE00A9E819 /* PowerUseView.swift in Sources */,
+				576CC0F6276A7FB800A9E819 /* PasswordSetupView.swift in Sources */,
+				57004DC0278CC07D00A8E72C /* PhoneInfo.swift in Sources */,
+				574008CD2788B0F60068CB3D /* currPresetView.swift in Sources */,
+				576CC0F4276A7F9D00A9E819 /* UpdateView.swift in Sources */,
+				57A62FBC2784D661001342BD /* InfoView.swift in Sources */,
+				57F326B3276009120001A3D5 /* BetaOGWApp.swift in Sources */,
+				574008C92788B0C90068CB3D /* currModuleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		57F326BB276009160001A3D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57F326BC276009160001A3D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57F326BE276009160001A3D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BetaOGW/Preview Content\"";
+				DEVELOPMENT_TEAM = 9NGWNQGS6L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BetaOGW/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tau6;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ozGuitarWorks.myapp.BetaOGW;
+				PRODUCT_NAME = BetaOGW;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57F326BF276009160001A3D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BetaOGW/Preview Content\"";
+				DEVELOPMENT_TEAM = 9NGWNQGS6L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BetaOGW/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Tau6;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ozGuitarWorks.myapp.BetaOGW;
+				PRODUCT_NAME = BetaOGW;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57F326AA276009120001A3D5 /* Build configuration list for PBXProject "BetaOGW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F326BB276009160001A3D5 /* Debug */,
+				57F326BC276009160001A3D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57F326BD276009160001A3D5 /* Build configuration list for PBXNativeTarget "BetaOGW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F326BE276009160001A3D5 /* Debug */,
+				57F326BF276009160001A3D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57F326A7276009120001A3D5 /* Project object */;
+}
