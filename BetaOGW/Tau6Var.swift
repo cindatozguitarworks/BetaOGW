@@ -90,27 +90,43 @@ class Tau6: NSObject, ObservableObject {
       var id = UUID()
       var image: Image
       var name: String
-//      var pickup: String
-//      var type: String
-//      var layout: String
-//      var wood: String
+      
+      var moduleNo: String
+      var layout: String
+      var pickupNum:  Int
+      var wood: String
+      var pickupName: String
    }
-   
-   @Published var modules = [
-         Module(image: Image("OGWmodule"), name: "Module A"),
-         Module(image:Image ("Full_Strat_Empty"), name: "Module B"),
-         Module(image: Image("OGWmodule"), name: "Module C"),
-         Module(image:Image ("Full_Strat_Empty"), name: "Module D"),
-      ]
-  
-   
-  
-   
+    
+   struct Pickup: Identifiable {
+      var id = UUID()
+      var name: String
+      
+      var pickupType: String
+      var mountType: String
+      var pickupLocation: String
+      var pickupOrientation: String
+      var bassClearance: String
+      var trebleClearance: String
+   }
 
-  
-   
-   
-   
-   
+
+@Published var modules = [
+     Module(image: Image("OGWmodule"), name: "Module A", moduleNo: "1",layout: "HSS",pickupNum: 3, wood: "Spruce", pickupName: "Lace Alumitone" ),
+
+     Module(image:Image ("Full_Strat_Empty"), name: "Module B", moduleNo: "2",layout: "STS", pickupNum: 3,wood: "Spruce", pickupName: "Full Strat"),
+
+      Module(image: Image("OGWmodule"), name: "Module C", moduleNo: "3",layout: "HSS", pickupNum: 3,wood: "Spruce",pickupName: "Lace Alumitone" ),
+
+   Module(image:Image ("Full_Strat_Empty"), name: "Module D", moduleNo: "4",layout: "STS",pickupNum: 3,wood: "Spruce", pickupName: "Full Strat"),
+      ]
+
+   @Published var pickup = [
+      Pickup( name: "Lace Alumitone", pickupType: "Hum",mountType: "hard",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "1mm"),
+      Pickup( name: "Full Strat", pickupType: "Strat",mountType: "med",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "2mm"),
+      Pickup( name: "Lace Alumitone2", pickupType: "Hum",mountType: "soft",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "3mm"),
+      Pickup( name: "Full Strat 2", pickupType: "Strat",mountType: "hard",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "4mm"),
+
+   ]
    }
 

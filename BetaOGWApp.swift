@@ -9,12 +9,17 @@ import SwiftUI
 
 @main
 struct BetaOGWApp: App {
+   
+//   @StateObject var stateManager = StateManager()
+   
    @ObservedObject var tau6  = Tau6()
    
     var body: some Scene {
        
         WindowGroup {
-           MainView()
+           ContentView()
+        //      .environmentObject(stateManager)
+              
         }//windowgroup
     }//scene
 }//app

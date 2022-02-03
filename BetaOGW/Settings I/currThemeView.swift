@@ -11,9 +11,12 @@ struct currThemeView: View {
    @ObservedObject var tau6  = Tau6()
        
    var body: some View {
+      NavigationView {
        Form{
         }//form
-       .navigationBarTitle("Theme Page")
+       .navigationBarTitle("Theme Page ", displayMode: .inline)
+     }//nav
+    .navigationViewStyle(StackNavigationViewStyle())
     
    }//body
 }//view
@@ -21,8 +24,8 @@ struct currThemeView: View {
 
 struct currThemeView_Previews: PreviewProvider {
     static var previews: some View {
-       NavigationView {
+       
         currThemeView()
-       }
+       
     }
 }

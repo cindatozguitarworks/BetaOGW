@@ -22,7 +22,7 @@ struct PasswordSetupView: View {
    
    
     var body: some View {
-       
+       NavigationView{
        Form{
    //MARK: -
         Section(header: Text("Passwords")) {
@@ -85,7 +85,9 @@ struct PasswordSetupView: View {
          }//section
     }//form
       // .padding(20)
-       .navigationTitle("Password User Setup")
+       .navigationBarTitle("Password User Setup", displayMode: .inline)
+       }//nav
+       .navigationViewStyle(StackNavigationViewStyle())
     }//body
 }//view
 

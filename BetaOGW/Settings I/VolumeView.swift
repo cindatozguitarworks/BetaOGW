@@ -12,17 +12,20 @@ struct VolumeView: View {
    @ObservedObject var tau6  = Tau6()
        
    var body: some View {
+      NavigationView{
        Form{
         }//form
-       .navigationBarTitle("Volume Control")
+       .navigationBarTitle("Volume ", displayMode: .inline)
+     }//nav
+    .navigationViewStyle(StackNavigationViewStyle())
     
    }//body
 }//view
 
 struct VolumeView_Previews: PreviewProvider {
     static var previews: some View {
-       NavigationView {
+    //   NavigationView {
         VolumeView()
-       }
+     //  }
     }
 }

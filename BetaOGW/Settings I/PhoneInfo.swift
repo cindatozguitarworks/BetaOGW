@@ -17,7 +17,7 @@ var modelName: String {
             guard let value = element.value as? Int8, value != 0 else { return identifier }
             return identifier + String(UnicodeScalar(UInt8(value)))
 }
-       print(identifier)
+     //  print(identifier)
        switch identifier {
    
                case "iPod5,1":                                       return "iPod touch (5th generation)"

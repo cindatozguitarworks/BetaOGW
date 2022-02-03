@@ -11,17 +11,20 @@ struct ToneView: View {
    @ObservedObject var tau6  = Tau6()
        
    var body: some View {
+      NavigationView {
        Form{
         }//form
-       .navigationBarTitle("Tone Control")
+       .navigationBarTitle("Tone Use ", displayMode: .inline)
+     }//nav
+    .navigationViewStyle(StackNavigationViewStyle())
     
    }//body
 }//view
 
 struct ToneView_Previews: PreviewProvider {
     static var previews: some View {
-       NavigationView {
+       
         ToneView()
-       }
+      
     }
 }

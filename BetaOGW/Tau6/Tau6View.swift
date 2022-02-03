@@ -34,7 +34,12 @@ struct Tau6View: View {
           
         // }//form
   //  .navigationBarTitle("Tau6 App")
+ //  .navigationBarBackButtonHidden(true)
+
+     
+     
   }//body
+     
 }//view
 
 

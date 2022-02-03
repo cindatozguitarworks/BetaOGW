@@ -11,9 +11,18 @@ struct UpdateView: View {
    
    @ObservedObject var tau6  = Tau6()
    
+    @State private var selected: String? = nil
+   
  //  @State var firmwareVersion: String = "NvrCrsh2"
    
     var body: some View {
+       NavigationView {
+          
+//          VStack {
+//             Text("Firmware Rev")
+//                .font(.title)
+//                .bold()
+       
        Form{
          
           
@@ -54,17 +63,25 @@ struct UpdateView: View {
                 Text("add a list here - Keep how many")
                 }//LIST
              }//section 2
-          
-      .navigationBarTitle("Firmware Rev")
-       
+//       }//vstack
        }//form
+       .navigationBarTitle("Firmware Update", displayMode: .inline)
+      
+    
+//      .navigationBarBackButtonHidden(true)
+//
+//      .navigationBarItems(leading: NavigationLink(destination: Settings1View(),
+//      label: { Image(systemName: "arrow.left") }) )
+//
+       }//form
+       .navigationViewStyle(StackNavigationViewStyle())
    }//body
 
 }//view
 
 struct UpdateView_Previews: PreviewProvider {
     static var previews: some View {
-       NavigationView {
+     //  NavigationView {
           UpdateView() }
-    }
+  //  }
 }

@@ -11,9 +11,12 @@ struct currPresetView: View {
    @ObservedObject var tau6  = Tau6()
        
    var body: some View {
+      NavigationView {
        Form{
         }//form
-       .navigationBarTitle("Preset Page")
+       .navigationBarTitle("Preset Page ", displayMode: .inline)
+     }//nav
+    .navigationViewStyle(StackNavigationViewStyle())
     
    }//body
 }//view
@@ -21,8 +24,9 @@ struct currPresetView: View {
 
 struct currPresetView_Previews: PreviewProvider {
     static var previews: some View {
-       NavigationView {
+       
         currPresetView()
-       }
+       
+       
     }
 }

@@ -12,7 +12,7 @@ struct PhoneDetailView: View {
    @ObservedObject var tau6  = Tau6()
    
     var body: some View {
-
+       NavigationView {
    Form{
    //MARK: - 1st Section - CLEAN UP
       Section(header: Text("Device Information")) {
@@ -99,15 +99,16 @@ struct PhoneDetailView: View {
 
      }//form
       
-         .navigationBarTitle("BlueTooth Debug Info")
-      
+         .navigationBarTitle("BlueTooth Debug Info", displayMode: .inline)
+       }//nav
+         .navigationViewStyle(StackNavigationViewStyle())
    
     }//body
 }//view
 
 struct PhoneDetailView_Previews: PreviewProvider {
     static var previews: some View {
-       NavigationView {
+   //    NavigationView {
           PhoneDetailView() }
-    }
+ //   }
 }

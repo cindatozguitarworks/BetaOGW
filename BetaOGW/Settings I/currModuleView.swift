@@ -11,17 +11,20 @@ struct currModuleView: View {
    @ObservedObject var tau6  = Tau6()
        
    var body: some View {
+      NavigationView {
        Form{
         }//form
-       .navigationBarTitle("Module Page")
+       .navigationBarTitle("Current Module Use ", displayMode: .inline)
+     }//nav
+    .navigationViewStyle(StackNavigationViewStyle())
     
    }//body
 }//view
 
 struct currModuleView_Previews: PreviewProvider {
     static var previews: some View {
-       NavigationView {
+//       NavigationView {
         currModuleView()
-       }
+//       }
     }
 }

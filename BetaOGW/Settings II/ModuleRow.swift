@@ -11,6 +11,8 @@ struct ModuleRow: View {
    
    @ObservedObject var tau6  = Tau6()
    
+   
+   
 //   var moduleRow :
    
     var body: some View {
@@ -29,5 +31,6 @@ struct ModuleRow: View {
 struct ModuleRow_Previews: PreviewProvider {
     static var previews: some View {
         ModuleRow()
+       
     }
 }
