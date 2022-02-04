@@ -10,18 +10,22 @@ import SwiftUI
 struct InfoView: View {
    
     var body: some View {
-       VStack{
-          Text("Info on Guitar Screen - Upper Right Circle")
-         Spacer()
-      } .padding()
-        .navigationBarTitle("Info")
+       NavigationView {
+          VStack{
+             Text("Info on Guitar Screen - Upper Right Circle")
+            Spacer()
+         } .padding()
+             .navigationBarTitle( "Info", displayMode: .inline)
+           }//nav
+             .navigationViewStyle(StackNavigationViewStyle())
+       
     }
   }
 
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
-       NavigationView {
+      
         InfoView()
-       }
+       
     }
 }

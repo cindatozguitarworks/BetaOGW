@@ -73,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		575EABC527AC809D006AA761 /* Settings3 */ = {
+			isa = PBXGroup;
+			children = (
+				57004DC7278E162B00A8E72C /* Setting3View.swift */,
+			);
+			path = Settings3;
+			sourceTree = "<group>";
+		};
 		576CC0F9276A7FD600A9E819 /* Settings I */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,12 +139,12 @@
 			isa = PBXGroup;
 			children = (
 				574008D627890CFF0068CB3D /* Info.plist */,
-				579E38FD27A0983F001B95D9 /* Tau6 */,
 				57A62FBB2784D661001342BD /* InfoView.swift */,
 				57A62FB92783CCEA001342BD /* Tau6Var.swift */,
+				575EABC527AC809D006AA761 /* Settings3 */,
 				57E2C1252792225E0051D38E /* Settings II */,
-				57004DC7278E162B00A8E72C /* Setting3View.swift */,
 				576CC0F9276A7FD600A9E819 /* Settings I */,
+				579E38FD27A0983F001B95D9 /* Tau6 */,
 				57F326B4276009120001A3D5 /* ContentView.swift */,
 				579E38FE27A0C9C3001B95D9 /* StateManager.swift */,
 				574008D227890CD50068CB3D /* Assets.xcassets */,

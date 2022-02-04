@@ -16,8 +16,12 @@ struct ModuleView: View {
 //   @ObservedObject var tabController = TabController()
    @ObservedObject var tau6  = Tau6()
    
-   @State var pickNum = 1
+   @State var isPickup1: Bool = false
+   @State var isPickup2: Bool = false
+   @State var isPickup3: Bool = false
+   @State var pickNum = 0
    @State var greenBut = false
+   @State var pickupChoice = ["One","Two","Three"]
  //  @GestureState priv
    
    
@@ -43,44 +47,62 @@ struct ModuleView: View {
                    .resizable()
                    .aspectRatio( contentMode: .fit)
                   // .frame(width: 100,height: 100)
-                HStack{
+               
                 Spacer()
+                   HStack{
+                    //Text("Unit Choice =")
+                      Picker("Pickup No", selection: $pickNum) {
+                            ForEach(0 ..< pickupChoice.count){
+                              Text(self.pickupChoice[$0])
+                            }
+                   }.pickerStyle(SegmentedPickerStyle())
+                  }//stack
                    
-                   Button(action: {
-//                         pickNum = 0
-                        },label: {
-                           Image(systemName: "arrowtriangle.up.circle.fill")
-                              .font(.system(size: 25))
-                              .foregroundColor(.black)
-                          // arrowtriangle.up.circle
-                       } )//button
-                   
-                Spacer()
-                   Button(action: {
-//                         pickNum = 1
-                        },label: {
-                           Image(systemName: "arrowtriangle.up.circle.fill")
-                              .font(.system(size: 25))
-                              .foregroundColor(.green)
-                         
-                       } )//button
-                Spacer()
-                   Button(action: {
+//                HStack{
+//                   Button(action: {
+//                      isPickup1.toggle()
+//                      //   pickNum = 0
+//                      //    print(pickNum)
+//                        },label: {
+//                           Image(systemName: "arrowtriangle.up.circle.fill")
+//                              .font(.system(size: 25))
+//
+//                              .foregroundColor(isPickup1 ? .green : .black)
+//                             // .background(.green)
+//                          // arrowtriangle.up.circle
+//                       } )//button
+//
+//                Spacer()
+//                   Button(action: {
+//                      isPickup3.toggle()
+//                      //  pickNum = 1
+//                  //    print(pickNum)
+//                        },label: {
+//                           Image(systemName: "arrowtriangle.up.circle.fill")
+//                              .font(.system(size: 25))
+//                              .foregroundColor(isPickup2 ? .green : .black)
+//                            //  .background(.black)
+//
+//                       } )//button
+//                Spacer()
+//                  Button(action: {
+//                     isPickup3.toggle()
 //                         pickNum = 2
-                        },label: {
-                           Image(systemName: "arrowtriangle.up.circle")
-                              .font(.system(size: 25))
-                              .foregroundColor(.black)
-                         
-                       } )//button
-                   Spacer()
-                }
+//                   //   print(pickNum)
+//                        },label: {
+//                           Image(systemName: "arrowtriangle.up.circle.fill")
+//                              .font(.system(size: 25))
+//                              .foregroundColor(isPickup3 ? .green : .black)
+//
+//                       } )//button
+//                   Spacer()
+//                }
       } //section2
                  
 //MARK: - 3rd Section
          
       Section(header: Text("Pickup Details")) {
-   
+//         Text(String(pickNum))
          Text("Pickup Used = \(tau6.pickup[pickNum].name)")
          Text("Type = \(tau6.pickup[pickNum].pickupType)")
          Text("Mount soft/med/hard = \(tau6.pickup[pickNum].mountType)")
@@ -90,43 +112,19 @@ struct ModuleView: View {
          Text("Treble String Clearance = \(tau6.pickup[pickNum].trebleClearance)")
         
       }//section 3
-         Spacer()
+  
       
     }//form
         
-  //     .navigationBarTitle(tau6.modules[0].name)
-      .navigationBarTitle("Module Setup", displayMode: .inline)
+     .navigationBarTitle(tau6.modules[0].name,displayMode: .inline)
+   //   .navigationBarTitle("Module Setup", displayMode: .inline)
  
-     //  .navigationBarBackButtonHidden(true)
-
-//       .navigationBarItems(leading: NavigationLink(destination: Settings2View(), label: { Image(systemName: "arrow.left") }) )
-      
-//       .navigationBarItems(trailing: NavigationLink(destination: InfoView(), label: { Image(systemName: "info.circle") }) )
-//
-      
-//       .toolbar {
-//          ToolbarItemGroup(placement: .navigationBarLeading){
-//
-//             Button("Modules") {
-//                tabController.open(TabController.Tab.settings2)
-//             }
-//            }
-//
-//         ToolbarItem(placement: .navigation) {
-//          Image(systemName: "arrow.left")
-//              // .foregroundColor(.blue)
-//               .onTapGesture {  self.mode.wrappedValue.dismiss()
-//            }
-      //   }
-
-//       }//toolbar
-       
-//       .accentColor(.blue)
-      // .bold()
+   
 //         }//vstack
-         .navigationViewStyle(StackNavigationViewStyle())
+      
       
       }//nav
+      .navigationViewStyle(StackNavigationViewStyle())
    }//body
 }//view
 
