@@ -10,8 +10,17 @@ import SwiftUI
 
 struct PasswordSetupView: View {
    
-   @ObservedObject var tau6  = Tau6()
+// @Environment(\.presentationMode) var presentationMode
    
+ //  @EnvironmentObject var stateManager: StateManager
+   
+//   @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+   
+//   @GestureState private var dragOffset = CGSize.zero
+   
+   
+   @EnvironmentObject var tau6: Tau6
+  
 
    @State var pChoice = ["No","Yes"]
    @State var rChoice = ["No","Yes"]
@@ -64,7 +73,7 @@ struct PasswordSetupView: View {
          .opacity(tau6.passwordOn ? 1 : 0)
            
                   
-           Picker( String("Days between password ask  "), selection: $tau6.passwordDays, content: {
+           Picker( String("Days between password ask  \(tau6.passwordDays)"), selection: $tau6.passwordDays, content: {
               Text(" 1 ").tag(" 1 ")
               Text(" 7 ").tag(" 7 ")
               Text(" 14 ").tag(" 14 ")
@@ -83,11 +92,37 @@ struct PasswordSetupView: View {
                        }//toggle
              }//hstack
          }//section
+//          Button(action: {
+//             presentationMode.wrappedValue.dismiss()
+//
+//          }, label: {Text ("Back One")
+//          })
+//
     }//form
       // .padding(20)
+    
        .navigationBarTitle("Password User Setup", displayMode: .inline)
+    
+    
+      
+//      .navigationBarBackButtonHidden(true)
+//
+//      .navigationBarItems(leading: Button(action: {
+//           self.mode.wrappedValue.dismiss()
+//     }){
+//         Image(systemName: "arrow.left")
+//      })
+//    .frame(maxWidth: .infinity, maxHeight: .infinity)
+//       .gesture(DragGesture().updating( $dragOffset, body: { (value, state, transaction) in
+//          if (value.startLocation.x < 20 && value.translation.width > 100) {
+//             self.mode.wrappedValue.dismiss()
+//          }
+//       }))
+    
        }//nav
        .navigationViewStyle(StackNavigationViewStyle())
+//      .navigationBarBackButtonHidden(true)
+
     }//body
 }//view
 
@@ -97,6 +132,8 @@ struct PasswordSetupView_Previews: PreviewProvider {
     static var previews: some View {
        NavigationView {
         PasswordSetupView()
+//             .environmentObject(StateManager())
+             .environmentObject(Tau6())
        }
     }
 }

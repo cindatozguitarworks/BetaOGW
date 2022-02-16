@@ -9,10 +9,11 @@ import SwiftUI
 
 struct Settings1View: View {
    
-   @ObservedObject var tau6  = Tau6()
+   @EnvironmentObject var tau6: Tau6
    
-//   @EnvironmentObject var stateManager: StateManager
-//   @ObservedObject  var tabController = TabController()
+   
+//  @EnvironmentObject var stateManager: StateManager
+
    
 //   @State private var   upDatePShow: Bool = false
   
@@ -29,11 +30,7 @@ struct Settings1View: View {
        
        NavigationView {
           
-//          VStack {
-//             Text("Settings I")
-//                .font(.title)
-//                .bold()
-             
+
              Form{
                
    //MARK: - 1st Section
@@ -51,7 +48,7 @@ struct Settings1View: View {
                 NavigationLink(destination: UpdateView(), label: { Text( " Tau6 Firmware Ver# =     \(tau6.firmwareVersion)")
                })
 
-                  NavigationLink(destination: PhoneDetailView(), label: { Text( " Misc Phone Details = ")
+                  NavigationLink(destination: PhoneDetailView(), label: { Text( " Misc Phone Details = \(tau6.deviceName)")
                   }
                   )
                HStack{
@@ -77,10 +74,14 @@ struct Settings1View: View {
                   }.pickerStyle(SegmentedPickerStyle())
                  }//Hstack
    
+                     
+                     NavigationLink(destination: PasswordSetupView(),  label: {Text("go to detail")})
+                     
               NavigationLink(destination: PasswordSetupView(), label: {
                  VStack{
                     HStack{
-                    Text("Password Use    ")
+                    Text("Password Use          ")
+                    Text( (tau6.passwordOn == true) ? "Yes" :"No" )
                        Spacer()
                     }//hstack
                     HStack{
@@ -114,9 +115,11 @@ struct Settings1View: View {
             }//section 2
                //MARK: - THIRD SECTION
    
-            Section(header: Text("Pickup Info")) {
-               NavigationLink(destination: Settings2View(), label: { Text( "Current Module = ")
-               })
+            Section(header: Text("Current Setup")) {
+//               NavigationLink(destination: Settings2View(), label: {
+//
+                  Text( "Current Module = \(tau6.modules[tau6.moduleNum].name) ")
+//               })
    
               NavigationLink(destination: currThemeView(), label: { Text( "Current Theme = ")
                })
@@ -135,13 +138,13 @@ struct Settings1View: View {
        .navigationBarItems(trailing: NavigationLink(destination: InfoView(), label: { Image(systemName: "info.circle")
       }))
   
-        .navigationBarBackButtonHidden(true)
-
+      
          .navigationBarItems(leading: NavigationLink(destination: Tau6View(),
          label: { Image(systemName: "arrow.left") }) )
        
       .navigationViewStyle(StackNavigationViewStyle())
-       
+  //    .navigationBarBackButtonHidden(true)
+
 //       NavigationLink(destination: UpdateView(),
 //                      isActive: $stateManager.upDateShow, label: { Text( " Tau6 Firmware Ver# =     \(tau6.firmwareVersion)")})
 //
@@ -155,8 +158,9 @@ struct Settings1View_Previews: PreviewProvider {
     static var previews: some View {
 //NavigationView {
         Settings1View()
-           //  .environmentObject(StateManager())
+//           .environmentObject(StateManager())
 //             .environmentObject(TabController())
+          .environmentObject(Tau6())
 //    }
    }
 }

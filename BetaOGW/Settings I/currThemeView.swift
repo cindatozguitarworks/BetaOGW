@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct currThemeView: View {
-   @ObservedObject var tau6  = Tau6()
+   @EnvironmentObject var tau6: Tau6
        
    var body: some View {
       NavigationView {
@@ -26,6 +26,7 @@ struct currThemeView_Previews: PreviewProvider {
     static var previews: some View {
        
         currThemeView()
+          .environmentObject(Tau6())
        
     }
 }

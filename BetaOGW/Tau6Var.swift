@@ -4,7 +4,7 @@
 //
 //  Created by Cynthia Anderson on 1/3/22.
 //
-
+import Foundation
 import SwiftUI
 
 
@@ -108,24 +108,60 @@ class Tau6: NSObject, ObservableObject {
       var pickupOrientation: String
       var bassClearance: String
       var trebleClearance: String
+      
+      var manufact: String
+      var cover: String
+      var grndWire: String
+    //  var dimensions: String = " Goto Dimensions > "
+      var upperPolarity: String
+      
+      var northInductance: String
+      var northResistance: String
+      var northCapictance: String
+      var northStartWireCol: String
+      var northEndWireCol: String
+      
+      var southInductance: String
+      var southResistance: String
+      var southCapictance: String
+      var southStartWireCol: String
+      var southEndWireCol: String
+      
    }
+   
+   
 
-
+@Published var moduleNum = 0
+@Published var pickNum = 0
+   
 @Published var modules = [
-     Module(image: Image("OGWmodule"), name: "Module A", moduleNo: "1",layout: "HSS",pickupNum: 3, wood: "Spruce", pickupName: "Lace Alumitone" ),
+   Module(image: Image("OGWmodule"), name: "Module A", moduleNo: "1",layout: "HSS",pickupNum: 3, wood: "Spruce", pickupName: "Lace Alumitone" ),
 
      Module(image:Image ("Full_Strat_Empty"), name: "Module B", moduleNo: "2",layout: "STS", pickupNum: 3,wood: "Spruce", pickupName: "Full Strat"),
 
-      Module(image: Image("OGWmodule"), name: "Module C", moduleNo: "3",layout: "HSS", pickupNum: 3,wood: "Spruce",pickupName: "Lace Alumitone" ),
+      Module(image: Image("OGWmodule"), name: "Module C", moduleNo: "3",layout: "HSS", pickupNum: 3,wood: "Spruce",pickupName: "Lace Alumitone"),
 
    Module(image:Image ("Full_Strat_Empty"), name: "Module D", moduleNo: "4",layout: "STS",pickupNum: 3,wood: "Spruce", pickupName: "Full Strat"),
       ]
 
    @Published var pickup = [
-      Pickup( name: "Lace Alumitone", pickupType: "Hum",mountType: "hard",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "1mm"),
-      Pickup( name: "Full Strat", pickupType: "Strat",mountType: "med",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "2mm"),
-      Pickup( name: "Lace Alumitone2", pickupType: "Hum",mountType: "soft",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "3mm"),
-      Pickup( name: "Full Strat 2", pickupType: "Strat",mountType: "hard",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "4mm"),
+      Pickup( name: "Lace Alumitone", pickupType: "Hum",mountType: "hard",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "1mm",manufact: "Lace",cover: "None", grndWire: "Yes",upperPolarity: "North",
+              northInductance:"1500 mH",northResistance: "5.4k Ohms",northCapictance: "25pF",northStartWireCol: "Black", northEndWireCol: "Blue",
+              southInductance: "1500 mH",southResistance: "5.4k Ohms",southCapictance: "25pF",southStartWireCol:  "Black", southEndWireCol: "Blue"),
+      
+      Pickup( name: "Full Strat", pickupType: "Strat",mountType: "med",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "2mm",manufact: "Strat",cover: "Yes", grndWire: "No",upperPolarity: "South",
+              northInductance:"1500 mH",northResistance: "4.5k Ohms",northCapictance: "50pF",northStartWireCol: "Black", northEndWireCol: "Blue",
+              southInductance: "15001 mH",southResistance: "4.5k Ohms",southCapictance: "50pF",southStartWireCol:  "Red", southEndWireCol: "Yellow"),
+      
+      Pickup( name: "Lace Alumitone2", pickupType: "Hum",mountType: "soft",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "3mm",manufact: "Lace",cover: "None", grndWire: "Yes",upperPolarity: "North",
+              northInductance:"1500 mH",northResistance: "5.4k Ohms",northCapictance: "25pF",northStartWireCol: "Black", northEndWireCol: "Blue",
+              southInductance: "1500 mH",southResistance: "5.4k Ohms",southCapictance: "25pF",southStartWireCol:  "Black", southEndWireCol: "Blue"),
+      
+          
+      Pickup( name: "Full Strat 2", pickupType: "Strat",mountType: "hard",pickupLocation: "5mm", pickupOrientation: "0deg",bassClearance: "1.5mm",trebleClearance: "4mm",manufact: "Strat",cover: "Yes", grndWire: "No", upperPolarity: "South",
+              northInductance:"15002mH",northResistance: "4.5k Ohms",northCapictance: "50pF",northStartWireCol: "Black", northEndWireCol: "Blue",
+              southInductance: "1500 mH",southResistance: "4.5k Ohms",southCapictance: "50pF",southStartWireCol:  "Red", southEndWireCol: "Yellow")
+      
 
    ]
    }

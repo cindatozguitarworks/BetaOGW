@@ -5,18 +5,21 @@
 //  Created by Cynthia Anderson on 1/25/22.
 //
 
-//import Foundation
+import Foundation
 //
-//class StateManager: ObservableObject {
+class StateManager: ObservableObject {
 //   
-//  
-//   
-//  @Published var activeTabIndex: Int = 0
+   @Published var selection: Int = 1
+
+   @Published var passwordPageShown: Bool = false
+   @Published var selectedItem: String? = nil
+   
+   //  @Published var activeTabIndex: Int = 0
 //   
 //   
 //  @Published var  upDatePShow: Bool = false
 //   
-//}//class
+}//class
 
 //class TabController: ObservableObject {
 //

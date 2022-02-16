@@ -26,6 +26,7 @@
 		579E38FF27A0C9C3001B95D9 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 579E38FE27A0C9C3001B95D9 /* StateManager.swift */; };
 		57A62FBA2783CCEA001342BD /* Tau6Var.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A62FB92783CCEA001342BD /* Tau6Var.swift */; };
 		57A62FBC2784D661001342BD /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A62FBB2784D661001342BD /* InfoView.swift */; };
+		57DA896E27B4490000392F73 /* PickupDimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DA896D27B4490000392F73 /* PickupDimView.swift */; };
 		57E2C129279228080051D38E /* ModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2C128279228080051D38E /* ModuleView.swift */; };
 		57E2C12B279232500051D38E /* ModuleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2C12A279232500051D38E /* ModuleRow.swift */; };
 		57F326B3276009120001A3D5 /* BetaOGWApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F326B2276009120001A3D5 /* BetaOGWApp.swift */; };
@@ -54,6 +55,7 @@
 		579E38FE27A0C9C3001B95D9 /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
 		57A62FB92783CCEA001342BD /* Tau6Var.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tau6Var.swift; sourceTree = "<group>"; };
 		57A62FBB2784D661001342BD /* InfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		57DA896D27B4490000392F73 /* PickupDimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupDimView.swift; sourceTree = "<group>"; };
 		57E2C128279228080051D38E /* ModuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleView.swift; sourceTree = "<group>"; };
 		57E2C12A279232500051D38E /* ModuleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleRow.swift; sourceTree = "<group>"; };
 		57F326AF276009120001A3D5 /* BetaOGW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaOGW.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				57004DC7278E162B00A8E72C /* Setting3View.swift */,
+				57DA896D27B4490000392F73 /* PickupDimView.swift */,
 			);
 			path = Settings3;
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57DA896E27B4490000392F73 /* PickupDimView.swift in Sources */,
 				576CC0EE276A7F4F00A9E819 /* PhoneDetailView.swift in Sources */,
 				57F326B5276009120001A3D5 /* ContentView.swift in Sources */,
 				57A62FBA2783CCEA001342BD /* Tau6Var.swift in Sources */,

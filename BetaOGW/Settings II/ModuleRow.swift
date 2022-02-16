@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ModuleRow: View {
    
-   @ObservedObject var tau6  = Tau6()
+   @EnvironmentObject var tau6: Tau6
    
    
    
@@ -31,6 +31,7 @@ struct ModuleRow: View {
 struct ModuleRow_Previews: PreviewProvider {
     static var previews: some View {
         ModuleRow()
+          .environmentObject(Tau6())
        
     }
 }

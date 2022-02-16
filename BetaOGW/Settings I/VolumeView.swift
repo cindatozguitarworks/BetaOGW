@@ -9,7 +9,7 @@ import SwiftUI
 
 struct VolumeView: View {
    
-   @ObservedObject var tau6  = Tau6()
+   @EnvironmentObject var tau6: Tau6
        
    var body: some View {
       NavigationView{
@@ -26,6 +26,7 @@ struct VolumeView_Previews: PreviewProvider {
     static var previews: some View {
     //   NavigationView {
         VolumeView()
+          .environmentObject(Tau6())
      //  }
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PowerUseView: View {
    
-   @ObservedObject var tau6  = Tau6()
+   @EnvironmentObject var tau6: Tau6
    @State var nChoice = ["No","Yes"]
    @State var vChoice = ["No","Yes"]
 var body: some View {
@@ -110,6 +110,7 @@ struct PowerUseView_Previews:
     static var previews: some View {
        NavigationView {
         PowerUseView()
+             .environmentObject(Tau6())
        }
     }
 }

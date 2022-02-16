@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UpdateView: View {
    
-   @ObservedObject var tau6  = Tau6()
+   @EnvironmentObject var tau6: Tau6
    
     @State private var selected: String? = nil
    
@@ -82,6 +82,8 @@ struct UpdateView: View {
 struct UpdateView_Previews: PreviewProvider {
     static var previews: some View {
      //  NavigationView {
-          UpdateView() }
+          UpdateView()
+          .environmentObject(Tau6())
+    }
   //  }
 }

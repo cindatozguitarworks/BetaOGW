@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct currModuleView: View {
-   @ObservedObject var tau6  = Tau6()
+   @EnvironmentObject var tau6: Tau6
        
    var body: some View {
       NavigationView {
@@ -25,6 +25,7 @@ struct currModuleView_Previews: PreviewProvider {
     static var previews: some View {
 //       NavigationView {
         currModuleView()
+          .environmentObject(Tau6())
 //       }
     }
 }

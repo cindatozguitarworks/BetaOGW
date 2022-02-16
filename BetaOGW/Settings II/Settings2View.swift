@@ -11,10 +11,11 @@ struct Settings2View: View {
    
  //  @EnvironmentObject var stateManager: StateManager
    
+   
    @State var tau6PisActive = false
    @State var ModPisActive = false
    
-   @ObservedObject var tau6  = Tau6()
+   @EnvironmentObject var tau6: Tau6
    
    
     var body: some View {
@@ -153,6 +154,7 @@ struct Settings2View_Previews: PreviewProvider {
        NavigationView {
         Settings2View()
         //     .environmentObject(StateManager())
+             .environmentObject(Tau6())
        }
     }
 }

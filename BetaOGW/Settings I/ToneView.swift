@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ToneView: View {
-   @ObservedObject var tau6  = Tau6()
+   @EnvironmentObject var tau6: Tau6
        
    var body: some View {
       NavigationView {
@@ -25,6 +25,7 @@ struct ToneView_Previews: PreviewProvider {
     static var previews: some View {
        
         ToneView()
+          .environmentObject(Tau6())
       
     }
 }
